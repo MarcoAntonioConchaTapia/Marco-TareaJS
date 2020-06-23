@@ -1,0 +1,28 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tarea 2 en JS</title>
+	<link rel="stylesheet" href="css/estilo.css">
+	<script>
+        // en la funcion cambiar texto agregamos el document para que obtenga el nombre puesto como "Marco" 
+		function cambiarTexto(){document.getElementById("miParrafo").innerHTML= "Marco";}
+	</script>
+</head>
+<body>
+    <!--Estos son los vinculos a los diferentes html -->
+   <section id="contenedor">
+    <header>
+        <a href="index.html"><H1 id="palabras">Inicio</H1></a>
+        <a href="01_TareaJS.html"><H1 id="palabras">Tarea 1</H1></a>
+        <a href="02_TareaJS.html"><H1 id="palabras">Tarea 2</H1></a>                     
+        <a href="03_TareaJS.html"><H1 id="palabras">Tarea 3</H1></a> 
+
+    </header>
+    </section>
+    <h1 id="miParrafo">Tarea 02 con JavaScript</h1>
+    <!-- Agregamos el botón para que al momento de hacer click, ejecute la funcion de cambiar texto -->
+    <input type="button" value="clickme" onclick="cambiarTexto();">
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tarea 1 en JS</title>
+	<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+	<!--Estos son los vinculos a los diferentes html -->
+    <section id="contenedor">
+    <header>
+    	<a href="index.html"><H1 id="palabras">Inicio</H1></a>
+    	<a href="01_TareaJS.html"><H1 id="palabras">Tarea 1</H1></a>
+    	<a href="02_TareaJS.html"><H1 id="palabras">Tarea 2</H1></a>					 
+    	<a href="03_TareaJS.html"><H1 id="palabras">Tarea 3</H1></a> 
+
+    </header>
+	</section>
+
+
+
+<script>
+		
+	//preguntamos la calificación
+	var calificacion = prompt("Ingresa calificación");
+
+	//abrimos la condicional concatenando la calificación preguntada y su mensaje de nivel de competencia imprimiendolo
+	if (calificacion >= 9.5){ document.write("La calificación es " + calificacion + " y es autónomo")}
+	//continuamos con las siguientes condicionales
+	else if (calificacion >= 8.5){ document.write("La calificación es " + calificacion + " y es destacado")}
+	//continuamos con las siguientes condicionales
+	else if (calificacion >= 7.5){ document.write("La calificación es " + calificacion + " y es satisfactorio")}
+	//terminamos la condicional.
+	else {document.write("La calificación es " + calificacion + " y es no acreditado")}
+
+</script>     
+
+
+</body>
+</html>
